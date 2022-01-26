@@ -1,0 +1,4 @@
+[[list]]
+name = "Packedman"
+url = "/categories/packedman"
+desc = "Writing a Pacman inspired game in Rust."
