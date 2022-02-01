@@ -1,4 +1,4 @@
 [[list]]
 name = "Packedman"
 url = "/categories/packedman"
-desc = "Writing a Pacman inspired game in Rust."
+desc = "Writing a Pac-Man inspired game in Rust."
