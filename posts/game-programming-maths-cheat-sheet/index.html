@@ -16,7 +16,9 @@
 <meta name=googlebot content="index,follow,snippet,archive">
 <meta property="og:title" content="Game Programming Maths Cheat Sheet">
 <meta property="og:description" content="I don&rsquo;t use these maths functions often enough for them to stick in my head when I need them. I&rsquo;m developing this cheat sheet to help me have a handy reference when needed.
-Topics to cover  Movement (position, velocity, acceleration - derivatives and integrals) Vectors Matrices Collision detection  References  http://higherorderfun.com/blog/2012/06/03/math-for-game-programmers-05-vector-cheat-sheet/ https://www.youtube.com/watch?v=DPfxjQ6sqrc https://www.youtube.com/playlist?list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My https://thatfrenchgamedev.com/1026/game-programmers-handy-maths-formulas/ https://gist.github.com/xem/99930986c5333125a13b0ea50600391f  ">
+Linear interpolation Linear interpolation or LERP is useful for finding the value of a number between two points. Examples of uses are colour blending and distance along a line.
+There are two formulae:
+ c = a + (b - a) * t">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://junglie85.github.io/posts/game-programming-maths-cheat-sheet/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2022-01-26T20:52:10+00:00">
@@ -24,7 +26,9 @@ Topics to cover  Movement (position, velocity, acceleration - derivatives and in
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Game Programming Maths Cheat Sheet">
 <meta name=twitter:description content="I don&rsquo;t use these maths functions often enough for them to stick in my head when I need them. I&rsquo;m developing this cheat sheet to help me have a handy reference when needed.
-Topics to cover  Movement (position, velocity, acceleration - derivatives and integrals) Vectors Matrices Collision detection  References  http://higherorderfun.com/blog/2012/06/03/math-for-game-programmers-05-vector-cheat-sheet/ https://www.youtube.com/watch?v=DPfxjQ6sqrc https://www.youtube.com/playlist?list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My https://thatfrenchgamedev.com/1026/game-programmers-handy-maths-formulas/ https://gist.github.com/xem/99930986c5333125a13b0ea50600391f  ">
+Linear interpolation Linear interpolation or LERP is useful for finding the value of a number between two points. Examples of uses are colour blending and distance along a line.
+There are two formulae:
+ c = a + (b - a) * t">
 <link rel=stylesheet href=https://junglie85.github.io/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q=="><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script>
 <script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]-->
 <link rel=icon type=image/png href=https://junglie85.github.io/images/favicon.ico>
@@ -114,7 +118,7 @@ Topics to cover  Movement (position, velocity, acceleration - derivatives and in
 </a>
 </li>
 <li>
-<a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2fjunglie85.github.io%2fposts%2fgame-programming-maths-cheat-sheet%2f&name=Game%20Programming%20Maths%20Cheat%20Sheet&description=I%20don%26rsquo%3bt%20use%20these%20maths%20functions%20often%20enough%20for%20them%20to%20stick%20in%20my%20head%20when%20I%20need%20them.%20I%26rsquo%3bm%20developing%20this%20cheat%20sheet%20to%20help%20me%20have%20a%20handy%20reference%20when%20needed.%0aTopics%20to%20cover%20%20Movement%20%28position%2c%20velocity%2c%20acceleration%20-%20derivatives%20and%20integrals%29%20Vectors%20Matrices%20Collision%20detection%20%20References%20%20http%3a%2f%2fhigherorderfun.com%2fblog%2f2012%2f06%2f03%2fmath-for-game-programmers-05-vector-cheat-sheet%2f%20https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dDPfxjQ6sqrc%20https%3a%2f%2fwww.youtube.com%2fplaylist%3flist%3dPLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My%20https%3a%2f%2fthatfrenchgamedev.com%2f1026%2fgame-programmers-handy-maths-formulas%2f%20https%3a%2f%2fgist.github.com%2fxem%2f99930986c5333125a13b0ea50600391f%20%20" aria-label=Tumblr>
+<a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2fjunglie85.github.io%2fposts%2fgame-programming-maths-cheat-sheet%2f&name=Game%20Programming%20Maths%20Cheat%20Sheet&description=I%20don%26rsquo%3bt%20use%20these%20maths%20functions%20often%20enough%20for%20them%20to%20stick%20in%20my%20head%20when%20I%20need%20them.%20I%26rsquo%3bm%20developing%20this%20cheat%20sheet%20to%20help%20me%20have%20a%20handy%20reference%20when%20needed.%0aLinear%20interpolation%20Linear%20interpolation%20or%20LERP%20is%20useful%20for%20finding%20the%20value%20of%20a%20number%20between%20two%20points.%20Examples%20of%20uses%20are%20colour%20blending%20and%20distance%20along%20a%20line.%0aThere%20are%20two%20formulae%3a%0a%20c%20%3d%20a%20%2b%20%28b%20-%20a%29%20%2a%20t" aria-label=Tumblr>
 <i class="fab fa-tumblr" aria-hidden=true></i>
 </a>
 </li>
@@ -128,6 +132,7 @@ Topics to cover  Movement (position, velocity, acceleration - derivatives and in
 <div id=toc>
 <nav id=TableOfContents>
 <ul>
+<li><a href=#linear-interpolation>Linear interpolation</a></li>
 <li><a href=#topics-to-cover>Topics to cover</a></li>
 <li><a href=#references>References</a></li>
 </ul>
@@ -146,7 +151,7 @@ Game Programming Maths Cheat Sheet
 </div>
 <div class=article-read-time>
 <i class="far fa-clock"></i>
-0 minute read
+1 minute read
 </div>
 <div class=article-tag>
 <i class="fas fa-tag"></i>
@@ -159,6 +164,17 @@ Game Programming Maths Cheat Sheet
 <div class=content itemprop=articleBody>
 <p>I don&rsquo;t use these maths functions often enough for them to stick in my head when I need them. I&rsquo;m
 developing this cheat sheet to help me have a handy reference when needed.</p>
+<h2 id=linear-interpolation>Linear interpolation</h2>
+<p>Linear interpolation or LERP is useful for finding the value of a number between two points.
+Examples of uses are colour blending and distance along a line.</p>
+<p>There are two formulae:</p>
+<blockquote>
+<p><em>c = a + (b - a) * t</em></p>
+</blockquote>
+<blockquote>
+<p><em>c = a * (1 - t) + b * t</em></p>
+</blockquote>
+<p>Where <em>a</em> is the starting point, <em>b</em> is the end point and <em>t</em> is the distance as a percentage between them.</p>
 <h2 id=topics-to-cover>Topics to cover</h2>
 <ol>
 <li>Movement (position, velocity, acceleration - derivatives and integrals)</li>
@@ -196,6 +212,7 @@ developing this cheat sheet to help me have a handy reference when needed.</p>
 <div id=toc-footer style=display:none>
 <nav id=TableOfContents>
 <ul>
+<li><a href=#linear-interpolation>Linear interpolation</a></li>
 <li><a href=#topics-to-cover>Topics to cover</a></li>
 <li><a href=#references>References</a></li>
 </ul>
@@ -239,7 +256,7 @@ developing this cheat sheet to help me have a handy reference when needed.</p>
 </a>
 </li>
 <li>
-<a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2fjunglie85.github.io%2fposts%2fgame-programming-maths-cheat-sheet%2f&name=Game%20Programming%20Maths%20Cheat%20Sheet&description=I%20don%26rsquo%3bt%20use%20these%20maths%20functions%20often%20enough%20for%20them%20to%20stick%20in%20my%20head%20when%20I%20need%20them.%20I%26rsquo%3bm%20developing%20this%20cheat%20sheet%20to%20help%20me%20have%20a%20handy%20reference%20when%20needed.%0aTopics%20to%20cover%20%20Movement%20%28position%2c%20velocity%2c%20acceleration%20-%20derivatives%20and%20integrals%29%20Vectors%20Matrices%20Collision%20detection%20%20References%20%20http%3a%2f%2fhigherorderfun.com%2fblog%2f2012%2f06%2f03%2fmath-for-game-programmers-05-vector-cheat-sheet%2f%20https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dDPfxjQ6sqrc%20https%3a%2f%2fwww.youtube.com%2fplaylist%3flist%3dPLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My%20https%3a%2f%2fthatfrenchgamedev.com%2f1026%2fgame-programmers-handy-maths-formulas%2f%20https%3a%2f%2fgist.github.com%2fxem%2f99930986c5333125a13b0ea50600391f%20%20" aria-label=Tumblr>
+<a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2fjunglie85.github.io%2fposts%2fgame-programming-maths-cheat-sheet%2f&name=Game%20Programming%20Maths%20Cheat%20Sheet&description=I%20don%26rsquo%3bt%20use%20these%20maths%20functions%20often%20enough%20for%20them%20to%20stick%20in%20my%20head%20when%20I%20need%20them.%20I%26rsquo%3bm%20developing%20this%20cheat%20sheet%20to%20help%20me%20have%20a%20handy%20reference%20when%20needed.%0aLinear%20interpolation%20Linear%20interpolation%20or%20LERP%20is%20useful%20for%20finding%20the%20value%20of%20a%20number%20between%20two%20points.%20Examples%20of%20uses%20are%20colour%20blending%20and%20distance%20along%20a%20line.%0aThere%20are%20two%20formulae%3a%0a%20c%20%3d%20a%20%2b%20%28b%20-%20a%29%20%2a%20t" aria-label=Tumblr>
 <i class="fab fa-tumblr fa-lg" aria-hidden=true></i>
 </a>
 </li>
