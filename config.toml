@@ -1,8 +1,8 @@
 baseURL = "https://junglie85.github.io/"
 languageCode = "en-gb"
-title = "Ashley's musings"
+title = "junglie85"
 theme = "cactus"
-copyright = "Ashley Morton-Bye"
+copyright = "junglie85"
 disqusShortname = "junglie85"            # Used when comments is enabled. Cactus will use site title if not set
 googleAnalytics = "G-6T5CSHL8L5"
 
@@ -58,7 +58,7 @@ description = "I'm a software developer who likes to tinker with new technologie
 mainSection = "posts"                                                                                                                                                                                                                                                                                                                                                                                                  # your main section
 showAllPostsOnHomePage = false                                                                                                                                                                                                                                                                                                                                                                                         # default
 postsOnHomePage = 20                                                                                                                                                                                                                                                                                                                                                                                                   # this option will be ignored if showAllPostsOnHomePage is set to true
-tagsOverview = true                                                                                                                                                                                                                                                                                                                                                                                                    # show tags overview by default.
+tagsOverview = false                                                                                                                                                                                                                                                                                                                                                                                                   # show tags overview by default.
 showProjectsList = true                                                                                                                                                                                                                                                                                                                                                                                                # show projects list by default (if projects data file exists).
 projectsUrl = "/categories"                                                                                                                                                                                                                                                                                                                                                                                            # title link for projects list
 

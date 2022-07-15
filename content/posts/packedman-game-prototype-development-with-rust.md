@@ -1,7 +1,7 @@
 ---
 title: "Packedman game prototype development with Rust"
 date: 2022-01-27T15:12:00Z
-draft: false
+draft: true
 tags: ["rust", "games"]
 categories: ["packedman"]
 ---

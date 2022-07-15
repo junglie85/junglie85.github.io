@@ -1,7 +1,7 @@
 ---
 title: "Game Programming Maths Cheat Sheet"
 date: 2022-01-26T20:52:10Z
-draft: false
+draft: true
 tags: ["games", "maths"]
 categories: []
 ---
@@ -64,6 +64,26 @@ let rotation = velocity_y.atan2(velocity_x);
 Where _𝛳_ is the amount of radians by which to perform the rotation.
 This rotation must be carried out about the origin and then translated.
 See [https://academo.org/demos/rotation-about-point/](https://academo.org/demos/rotation-about-point/)
+
+## Position - Velocity - Acceleration
+
+Integrate and differentiate between them.
+
+Velocity is the integral of acceleration with respect to elapsed time.
+
+> _vx += ax * dt_
+> _vy += ay * dt_
+
+Position is the integral of valocity with respect to elapsed time.
+
+> _px += vx * dt_
+> _py += vy * dt_
+
+Although for collision detection purposes, probably want to use a potential position as an intermediate step.
+
+## Vector stuff...
+
+Angle of incidence, reflection vector, dot product.
 
 ## References
 
