@@ -1,18 +1,19 @@
 languageCode = "en"
 languageName = "English"
-displayName = "EN"
-isoCode = "en"
+languageDirection = "ltr"
 weight = 1
-rtl = false
 
 title = "junglie85"
 # logo = "img/logo.jpg"
-# description = "My awesome website"
-# copyright = "Copy, _right?_ :thinking_face:"
+copyright = "&copy; 2024 Ashley Morton-Bye"
 
+[params]
+displayName = "EN"
+isoCode = "en"
 dateFormat = "02 Jan 2006"
+# description = "My awesome website"
 
-[author]
+[params.author]
 # name = "junglie85"
 # image = "img/author.jpg"
 headline = "Husband, father, follower of Jesus, software engineer"
